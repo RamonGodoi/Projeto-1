@@ -1,0 +1,138 @@
+html{
+  margin: 0px;
+  text-align: center;
+  background-color: black;
+}
+
+h1{
+  font-size: 55px;
+  color: yellow;
+  margin-bottom: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imagens {
+  width: 190px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.cards-info {
+  border-radius: 8px;
+  margin-bottom: 50px;
+  border: 2px solid rgb(215, 215, 35);
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #151414;
+}
+
+#titulo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+}
+
+#nota {
+  font-size: 0.9em;
+}
+
+
+
+.botao_sinopse{
+  background: linear-gradient(90deg, red, gold); /* Gradiente inicial */
+  color: white;
+  font-size: 15px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+
+.botao_sinopse::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  transform: skewX(-30deg);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.botao_sinopse:hover::before{
+  left: 100%;
+}
+
+
+.botao_sinopse:hover{
+  transform: scale(1.2) rotate(2deg); /* Aumenta o botão e o inclina */
+  box-shadow: 0 12px 25px rgba(213, 236, 0, 0.5);
+  background: linear-gradient(90deg, red, gold);
+}
+
+.botao_sinopse:active {
+  transform: scale(0.95);
+}
+
+
+.mudaPagina{
+  background-color: #ccc;
+  color: black;
+  border: 1px solid #aaa;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#pagina2 #botaoSerie{
+  background-color: gold;
+  color: black;
+  border: none;
+}
+
+#pagina1 #botaoFilme{
+  background-color: gold;
+  color:  black;
+  border: none;
+}
+
+#pagina1 #botaoSerie:hover, #pagina2 #botaoFilme:hover{
+  background-color: darkgray;
+}
+
+.pagina{
+  display: none;
+}
+
+.pagina.ativa{
+  display: block;
+}
