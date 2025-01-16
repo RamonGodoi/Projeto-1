@@ -8,10 +8,13 @@
 </head>
 
 <body>
-    <section id="pagina1" class="pagina ativa">
-        <h1>Titulo do site</h1>
-        <button onclick="irParaPagina(1)" class="mudaPagina" id="botaoFilme">Filmes</button>
+    <h1>PD SINÓPSES</h1>
+    <div id="botoes_menu">
+        <button onclick="irParaPagina(1)" class="mudaPagina ativo" id="botaoFilme">Filmes</button>
         <button onclick="irParaPagina(2)" class="mudaPagina" id="botaoSerie">Séries</button>
+    </div>
+
+    <section id="pagina1" class="pagina ativa">
         <main>
             <div class="cards">
                 <div class="cards-info">
@@ -219,13 +222,10 @@
     </section>
 
     <section id="pagina2" class="pagina">
-        <h1>Titulo do site</h1>
-        <button onclick="irParaPagina(1)" class="mudaPagina" id="botaoFilme">Filmes</button>
-        <button onclick="irParaPagina(2)" class="mudaPagina" id="botaoSerie">Séries</button>
         <main>
             <div class="cards">
                 <div class="cards-info">
-                    <img src="../imagens/A_viagem_de_Chihiro.png" alt="" class="imagens">
+                    <img src="../imagens/breaking_bad.png" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Breaking Bad</p>
                         <p id="nota">⭐⭐⭐⭐⭐</p>
@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/senhor_dos_aneis.jpg" alt="" class="imagens">
+                    <img src="../imagens/Game_of_Thrones.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Game of Thrones</p>
                         <p id="descricao">⭐⭐⭐⭐</p>
@@ -245,7 +245,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/harry_potter.png" alt="" class="imagens">
+                    <img src="../imagens/bojack_horseman.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">BoJack Horseman</p>
                         <p id="nota">⭐⭐⭐⭐</p>
@@ -255,7 +255,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/avangers.png" alt="" class="imagens">
+                    <img src="../imagens/Supernatural.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Supernatural</p>
                         <p id="nota">⭐⭐⭐</p>
@@ -265,7 +265,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/interestelar.png" alt="" class="imagens">
+                    <img src="../imagens/castelvania.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Castlevania</p>
                         <p id="nota">⭐⭐⭐⭐⭐</p>
@@ -275,7 +275,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/piratas_do_caribe.png" alt="" class="imagens">
+                    <img src="../imagens/simpsons.png" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Os Simpsons</p>
                         <p id="nota">⭐⭐⭐⭐</p>
@@ -285,7 +285,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/john_wick.png" alt="" class="imagens">
+                    <img src="../imagens/chernobyl.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Chernobyl</p>
                         <p id="nota">⭐⭐⭐⭐⭐</p>
@@ -295,7 +295,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/oppenheimer.png" alt="" class="imagens">
+                    <img src="../imagens/prision_break.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Prison Break</p>
                         <p id="nota">⭐⭐⭐⭐</p>
@@ -305,7 +305,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/mario.png" alt="" class="imagens">
+                    <img src="../imagens/peak_blinders.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Peaky Blinders</p>
                         <p id="nota">⭐⭐⭐⭐⭐</p>
@@ -315,7 +315,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/o_gato_de_botas.png" alt="" class="imagens">
+                    <img src="../imagens/stranger_things.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Stranger Things</p>
                         <p id="nota">⭐⭐⭐⭐⭐</p>
@@ -325,7 +325,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/duna.png" alt="" class="imagens">
+                    <img src="../imagens/suits.png" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Suits</p>
                         <p id="nota">⭐⭐⭐⭐</p>
@@ -335,7 +335,7 @@
                     </div>
                 </div>
                 <div class="cards-info">
-                    <img src="../imagens/homem_aranha.png" alt="" class="imagens">
+                    <img src="../imagens/apenas_um_show.jpg" alt="" class="imagens">
                     <div class="info">
                         <p id="titulo">Apenas Um Show</p>
                         <p id="nota">⭐⭐⭐⭐⭐</p>
@@ -349,10 +349,26 @@
     </section>
     
     <script>
-        function irParaPagina(numero){
-            document.querySelector('.ativa').classList.remove('ativa');
-            document.getElementById(`pagina${numero}`).classList.add('ativa');
-        }
+        function irParaPagina(numero) {
+        const paginaAtiva = document.querySelector('.ativa');
+        paginaAtiva.classList.remove('ativa');
+        
+        //Delay para transição de séries para filme, vice versa
+        setTimeout(() => {
+            const novaPagina = document.getElementById(`pagina${numero}`);
+            novaPagina.classList.add('ativa');
+            
+            // Atualiza a cor do botão ativo
+            const botaoAtivo = document.querySelector('.mudaPagina.ativo');
+            if (botaoAtivo) {
+                botaoAtivo.classList.remove('ativo');
+            }
+
+            // Adiciona a classe 'ativo' ao botão que foi clicado
+            const botaoSelecionado = document.getElementById(`botao${numero === 1 ? 'Filme' : 'Serie'}`);
+            botaoSelecionado.classList.add('ativo');
+        }, 200);
+}
     </script>
 </body>
 </html>
